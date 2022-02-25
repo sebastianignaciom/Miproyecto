@@ -1,1 +1,193 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --border-radius: 0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --skills-bar-length:0%;
+}
+
+body{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: black;
+    border: solid;
+    border-color: aliceblue;
+    border-width: 1px 1px 1px 1px;
+}
+
+#nombre_programa{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+#logo_argentinaPrograma{
+    border-radius: 5px;
+    float: left;
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+}
+
+.logos_redes{
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+#imagen_principal{
+    border-radius: 5px 5px 0 0;
+    position: relative; 
+    width: 1700px; 
+    height: 300px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+}
+
+#foto_perfil{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    position:relative; 
+    margin-top: -50px;
+    border-color: aliceblue;
+}
+
+#titulo_acercaDe{
+    margin-top: 40px;
+    color: white;
+}
+
+.btn_edit{
+    position: relative;
+}
+
+.btn_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+#seccion_acercaDe{
+    margin-left: 8px;
+    margin-right: 8px;
+    border-style: solid;
+    border-radius: 0 0 5px 5px;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+    color: white;
+}
+
+.seccion_varios{
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+    color: white;
+}
+
+#seccion_skills{
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+    width: auto;
+    color: white;
+}
+
+.seccion_proyectos{
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px 1px 1px 1px;
+    border-color: aliceblue;
+    color: white;
+}
+
+
+
+.margin_key{
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.margin_key2{
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.skills__header{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.skills__tech{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.skills__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skills__bar,
+.skills__bar::after{
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.skills__bar::after{
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: blue;
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skills__bar--80::after{
+    --skills-bar-length:80%;
+}
+.skills__bar--60::after{
+    --skills-bar-length:60%;
+}
+.skills__bar--90::after{
+    --skills-bar-length:90%;
+}
+
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}
+
+form{
+    color: white;
+
+}
