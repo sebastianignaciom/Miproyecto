@@ -7,6 +7,7 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaEducacionComponent } from './componentes/experiencia-educacion/experiencia-educacion.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SkillsComponent } from './componentes/skills/skills.component';
     EncabezadoComponent,
     AcercaDeComponent,
     ExperienciaEducacionComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule
