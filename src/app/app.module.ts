@@ -6,6 +6,8 @@ import { MiComponenteComponent } from './components/mi-componente/mi-componente.
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaEducacionComponent } from './componentes/experiencia-educacion/experiencia-educacion.component';
+import { SkillsComponent } from './componentes/skills/skills.component';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import { ExperienciaEducacionComponent } from './componentes/experiencia-educaci
     MiComponenteComponent,
     EncabezadoComponent,
     AcercaDeComponent,
-    ExperienciaEducacionComponent
+    ExperienciaEducacionComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule
