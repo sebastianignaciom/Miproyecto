@@ -1,0 +1,21 @@
+{
+	"informacion": {
+		"nombre": "Pepe",
+		"titulo": "Tortillero",
+		"acercaDe": "Desarrollador Jr. con ganas de crecer",
+		"imagen": "https://talently.tech/blog/wp-content/uploads/2021/02/aumentar-productividad-como-programador-1280x720.png"
+	},
+	"experiencia": [
+		{
+		  "lugar": "Sodería",
+		  "inicio": "1990",
+		  "finalizo": "2000"
+		},
+
+		{
+			"lugar": "Depósito",
+			"inicio": "2000",
+			"finalizo": "2010"
+		}
+	]
+}

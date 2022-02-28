@@ -9,6 +9,9 @@ import { ExperienciaEducacionComponent } from './componentes/experiencia-educaci
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
+//"Importamos el módulo httpClientModule, que sirve para realizar llamadas http a los servidores"
+import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     ProyectosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

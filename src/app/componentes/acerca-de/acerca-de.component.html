@@ -7,8 +7,9 @@
           <img src="./assets/foto_perfil.jpg" id="foto_perfil"
           class="rounded-circle "
           >
-          <h6 id="Nombre">Sebastian Ignacio Martinez</h6>
-          <h6>"Full Stack Developer Jr."</h6> 
+          <!--Para interpolar los datos del json usamos doble llave-->
+          <h6 id="Nombre">{{miPortfolio.informacion.nombre}}</h6>
+          <h6>{{miPortfolio.informacion.titulo}}</h6> 
         </div>
        <div class="col-8">
           <div class="btn_edit">

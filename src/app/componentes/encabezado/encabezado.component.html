@@ -34,7 +34,8 @@
     </div>   
         <div class="margin_key">
             <!--Imagen principal-->
-            <img src="https://talently.tech/blog/wp-content/uploads/2021/02/aumentar-productividad-como-programador-1280x720.png" 
+            <!--Para levantar propiedades, en este caso una url, del archivo json, ponemos la propiedad entre []-->
+            <img [src]="miPortfolio.informacion.imagen"
             id="imagen_principal"
             class ="img-fluid"
             >
